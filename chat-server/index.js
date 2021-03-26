@@ -15,7 +15,6 @@ httpServer.listen(port, function () {
   console.log("Listening on port " + port);
 });
 
-app.use(express.static("public"));
 
 io.on("connection", (socket) => {
   console.log("Socket connection made " + socket.id);
